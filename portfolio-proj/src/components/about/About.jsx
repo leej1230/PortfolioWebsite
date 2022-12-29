@@ -20,9 +20,9 @@ const About = () => {
         <div className="about__content">
           <div className="about__cards">
             <article className='about__card'>
-              <GrLanguage className='about__icon' />
-              <h5>Languages</h5>
-              <small>Fluent in 3 languages</small>
+              <GrLanguage className='about__icon lang' />
+              <h5>Trilingual</h5>
+              <small>Fluent in 3 languages: English, Japanese, Korean</small>
             </article>
 
             <article className='about__card'>

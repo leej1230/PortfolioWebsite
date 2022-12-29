@@ -11,6 +11,7 @@
     background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
     display: grid;
     place-items: center;
+    margin-top: 5rem;
 }
 
 .about__me-image {
@@ -31,7 +32,7 @@
 }
 
 .about__card {
-    background: var(--color-bg-variant);
+    background: #414194;
     border: 1px solid transparent;
     border-radius: 1rem;
     padding: 2rem;
@@ -51,8 +52,12 @@
     margin-bottom: 1rem;
 }
 
+.lang path{
+    stroke: white;
+}
+
 .about__card h5 {
-    font-size: 0.95rem;
+    font-size: 1.5rem;
 }
 
 .about__card small {
@@ -63,6 +68,11 @@
 .about__content {
     margin: 2rem 0 2.6rem;
     color: var(--color-light);
+}
+
+.about__content p{
+    margin-top: 0.6rem;
+    margin-bottom: 0.2rem;
 }
 
 /* ----Media Queries----(Medium Size Devices) */

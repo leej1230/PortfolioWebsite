@@ -10,14 +10,15 @@ import { useState } from 'react'
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState('#')
+  const style = { color: "white"}
   return (
     <nav>
-      <a href='#' onClick={() => setActiveNav('#')} className={activeNav==='#' ? 'active' : ''}><AiFillHome /></a>
-      <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav==='#about' ? 'active' : ''}><AiFillInfoCircle /></a>
-      <a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav==='#experience' ? 'active' : ''}><BiCodeBlock /></a>
-      <a href='#resume' onClick={() => setActiveNav('#resume')} className={activeNav==='#resume' ? 'active' : ''}><GrDocumentDownload /></a>
-      <a href='#portfolio' onClick={() => setActiveNav('#portfolio')} className={activeNav==='#portfolio' ? 'active' : ''}><GrPersonalComputer /></a>
-      <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav==='#contact' ? 'active' : ''}><GrContactInfo /></a>
+      <a href='#' onClick={() => setActiveNav('#')} className={activeNav==='#' ? 'active' : ''}><AiFillHome style={style} /></a>
+      <a href='#about' onClick={() => setActiveNav('#about')} className={activeNav==='#about' ? 'active' : ''}><AiFillInfoCircle style={style} /></a>
+      <a href='#experience' onClick={() => setActiveNav('#experience')} className={activeNav==='#experience' ? 'active' : ''}><BiCodeBlock style={style} /></a>
+      <a href='#resume' onClick={() => setActiveNav('#resume')} className={activeNav==='#resume' ? 'active' : ''}><GrDocumentDownload className='icon' /></a>
+      <a href='#portfolio' onClick={() => setActiveNav('#portfolio')} className={activeNav==='#portfolio' ? 'active' : ''}><GrPersonalComputer className='icon' /></a>
+      <a href='#contact' onClick={() => setActiveNav('#contact')} className={activeNav==='#contact' ? 'active' : ''}><GrContactInfo className='icon' /></a>
     </nav>
   )
 }

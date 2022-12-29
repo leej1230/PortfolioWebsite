@@ -1,49 +1,38 @@
 import React from 'react'
 import './portfolio.css'
-import IMG1 from '../../assets/testimg.jpeg'
+import IMG1 from '../../assets/portfolio_img/personal_website.png'
+import IMG2 from '../../assets/portfolio_img/spotifystatusshare.png'
+import IMG3 from '../../assets/portfolio_img/browseyalater.jpeg'
+import IMG4 from '../../assets/portfolio_img/pong.png'
 
 const data = [
   {
     id: 1,
     image: IMG1,
-    title: 'This is a test title',
-    github: 'Link to github',
-    demo: 'link to demo vid/website/image'
+    title: 'Personal Website',
+    github: 'https://github.com/leej1230/PortfolioWebsite',
+    demo: 'http://jaewoolee1230.com'
   },
   {
     id: 2,
-    image: IMG1,
-    title: 'This is a test title',
-    github: 'Link to github',
-    demo: 'link to demo vid/website/image'
+    image: IMG2,
+    title: 'Spotify Status Share',
+    github: 'https://github.com/leej1230/Spotify-Share-API',
+    demo: 'https://github.com/leej1230/Spotify-Share-API'
   },
   {
     id: 3,
-    image: IMG1,
-    title: 'This is a test title',
-    github: 'Link to github',
-    demo: 'link to demo vid/website/image'
+    image: IMG3,
+    title: 'Browse Ya Later',
+    github: 'https://github.com/leej1230/BrowseYaLater',
+    demo: 'https://youtu.be/0ujTrOaOeco'
   },
   {
     id: 4,
-    image: IMG1,
-    title: 'This is a test title',
-    github: 'Link to github',
-    demo: 'link to demo vid/website/image'
-  },
-  {
-    id: 5,
-    image: IMG1,
-    title: 'This is a test title',
-    github: 'Link to github',
-    demo: 'link to demo vid/website/image'
-  },
-  {
-    id: 6,
-    image: IMG1,
-    title: 'This is a test title',
-    github: 'Link to github',
-    demo: 'link to demo vid/website/image'
+    image: IMG4,
+    title: 'Pong with Processing',
+    github: 'https://github.com/leej1230/Atari-ish_PingPong_Game',
+    demo: 'https://github.com/leej1230/Atari-ish_PingPong_Game'
   }
 ]
 
@@ -66,7 +55,7 @@ const Portfolio = () => {
 
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
-                <a href={github} className='btn'>Github</a>
+                <a href={github} className='btn' target='_blank'>Github</a>
                 <a href={demo} className='btn btn-primary' target='_blank'>Demo</a>
               </div>
             </article>

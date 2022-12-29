@@ -38,7 +38,9 @@ header {
 
 /* IMG */
 .me {
-    background: linear-gradient(var(--color-primary), transparent);
+    /* background: linear-gradient(var(--color-primary), transparent); */
+    background: rgb(23,115,166);
+    background: linear-gradient(0deg, rgba(23,115,166,1) 33%, rgba(0,212,255,0) 100%);
     width: 22rem;
     height: 30rem;
     position: absolute;
